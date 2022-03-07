@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        @apply font-custom;
+    }
+
+    h1 {
+        @apply text-center font-bold text-xl mt-20;
+    }
+
+    h2 {
+        @apply mt-10 text-center font-light text-2xl text-gray;
+    }
+
+    h3 {
+        @apply mt-6 text-center font-light text-sm;
+    }
+
+    span {
+        @apply text-dark-blue font-semibold;
+    }
+
+    input {
+        @apply border-2 border-gray-blue w-[80%] ml-[10%] h-10 mt-10 rounded-full px-7 text-dark-blue font-thin placeholder:text-gray-blue focus:outline-blue;
+    }
+
+    div > p {
+        @apply text-xs text-center mt-2 italic text-red mb-4;
+    }
+
+    button {
+        @apply w-[80%] ml-[10%] bg-blue text-white font-semibold text-center h-10 rounded-full mt-2 shadow-lg shadow-gray-blue;
+    }
+
+    footer {
+        @apply flex justify-center mt-20;
+    }
+
+    footer > img {
+        @apply mr-3 border-[1px] rounded-full p-2 w-8 h-8 text-gray-blue hover:cursor-pointer hover:bg-gray-blue;
+        
+    }
+
+
+
+}
